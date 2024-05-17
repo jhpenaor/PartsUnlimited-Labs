@@ -8,6 +8,7 @@ if (!$env:Path.Contains($pathToWebTools)){
 	Write-Verbose "Adding '$pathToWebTools' to path for this session."
 	$env:Path += ";$pathToWebTools"
 }
+
 Write-Debug "Current Path: $env:Path"
 
 #Call dnu
